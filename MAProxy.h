@@ -1,3 +1,8 @@
+
+// Not often you get to do this legitimately :)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-root-class"
+
 @interface MAProxy
 {
     Class isa;
@@ -16,3 +21,4 @@
 
 @end
 
+#pragma clang diagnostic pop
