@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name             = 'MAFuture'
   s.version          = '0.0.1'
   s.summary          = 'Proxying futures library for Objective-C'
-  s.description      = "Proxying futures library for Objective-C"
+  s.description      = "Proxying futures library for Objective-C by Mike Ash"
   s.homepage         = 'https://github.com/mikeash/MAFuture'
   s.license          = { :type => 'BSD', :file => 'LICENSE' }
   s.author           = { 'Mark Aufflick' => 'mark@aufflick.com', 'Mike Ash' => 'mike@mikeash.com' }
