@@ -31,7 +31,7 @@
     else if([sig methodReturnType][0] != @encode(id)[0]) return NO;
     
     // it exists, returns an object, but does it return any non-objects by reference?
-    unsigned num = [sig numberOfArguments];
+    unsigned num = (unsigned)[sig numberOfArguments];
     for(unsigned i = 2; i < num; i++)
     {
         const char *type = [sig getArgumentTypeAtIndex: i];
@@ -92,7 +92,7 @@
         _MALazyBlockFuture *invocationFuture = nil;
         NSMutableArray *parameterDatas = nil;
         NSMethodSignature *sig = [invocation methodSignature];
-        unsigned num = [sig numberOfArguments];
+        unsigned num = (unsigned)[sig numberOfArguments];
         for(unsigned i = 2; i < num; i++)
         {
             const char *type = [sig getArgumentTypeAtIndex: i];
